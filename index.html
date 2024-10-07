@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart-Ticketing</title>
+
+  <!-- link daisyui & tailwindcss-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    
+
+<body class="font-raleway">
+
+  <header class="container lg:px-24 px-2 lg:my-5 my-2">
+    <div class="navbar ">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <a class="text-2xl font-extrabold">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-[#1DD1001A] border-[#1dd100] text-[#1DD100] font-bold text-xl">Bus <img
+            src="./images/bus-icon.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container lg:px-24 px-2 lg:my-5 my-2">
+      <div class="hero bg bg-cover w-full  rounded-3xl h-[70vh] lg:h-[90vh] "
+        style="background-image: url(./images/banner.png);">
+        <div class="hero-overlay bg-opacity-10 rounded-3xl"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-full">
+            <h1 class="mb-5 lg:text-6xl text-4xl  lg:font-extrabold font-extrabold">End-to-End Travel with <br> <span
+                class="text-[#1DD100]">P Paribahan</span></h1>
+            <p class="mb-5 lg:max-w-2xl">
+              Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing
+              features allow for a streamlined .
+            </p>
+            <button class="btn bg-[#1DD100] text-black border-none">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="lg:flex hidden">
+      <div class="h-[20vh] w-96 mx-auto bg-white -translate-y-24 rounded-3xl border-4 border-b-[#1DD100]">
+        <div class="flex p-5 mt-4 gap-8">
+          <img src="./images/people.png" alt="" />
+          <h3 class="font-extrabold text-3xl">
+            500K +<br />
+            <span class="font-light text-sm">Registered users</span>
+          </h3>
+        </div>
+      </div>
+      <div class="h-[20vh] w-96 mx-auto bg-white -translate-y-24 rounded-3xl border-4 border-b-[#1DD100]">
+        <div class="flex p-5 mt-4 gap-8">
+          <img src="./images/ticket-cupon.png" alt="" />
+          <h3 class="font-extrabold text-3xl">
+            1.7 lacks <br />
+            <span class="font-light text-sm">Tickets sold</span>
+          </h3>
+        </div>
+      </div>
+      <div class="h-[20vh] w-96 mx-auto bg-white -translate-y-24 rounded-3xl border-4 border-b-[#1DD100]">
+        <div class="flex p-5 mt-4 gap-8">
+          <img src="./images/stoppage.png" alt="" />
+          <h3 class="font-extrabold text-3xl">
+            800K + <br />
+            <span class="font-light text-sm">Rental partners</span>
+          </h3>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
 </body>
+
 </html>
